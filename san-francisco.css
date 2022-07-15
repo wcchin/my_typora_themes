@@ -1,0 +1,219 @@
+/* SanFrancisco Font from Apple CSS */
+/* Modify from Turing.css */
+
+
+@font-face{
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./sanfrancisco/SF-Pro-Display-Regular.otf');
+}
+@font-face{
+  font-family: 'SanFrancisco';
+  font-style: italic;
+  font-weight: normal;
+  src: url('./sanfrancisco/SF-Pro-Display-RegularItalic.otf');
+}
+
+@font-face{
+  font-family: 'SanFrancisco';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./sanfrancisco/SF-Pro-Display-Bold.otf');
+}
+
+@font-face{
+  font-family: 'SanFrancisco';
+  font-style: italic;
+  font-weight: bold;
+  src: url('./sanfrancisco/SF-Pro-Display-BoldItalic.otf');
+}
+
+@font-face{
+  font-family: 'SanFranciscoMono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./sanfrancisco/SF-Mono-Regular.otf');
+}
+
+@font-face{
+  font-family: 'SanFranciscoMono';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./sanfrancisco/SF-Mono-Bold.otf');
+}
+
+
+:root {
+	--active-file-bg-color: #ffffff;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #333;
+	--text-color: white;
+	--control-text-color: #444;
+	/*--rawblock-edit-panel-bd: #e5e5e5;*/
+  --text-color: #b8bfc6;
+  --primary-color: #6dc1e7;
+  --rawblock-edit-panel-bd: #444;
+  --side-bar-bg-color: #333;
+	--select-text-bg-color: #c5c9c7;/*rgba(32, 43, 51, 0.63);*/
+  --select-text-font-color: #4e5481;
+  --monospace: SanFranciscoMono; 
+}
+
+body {
+     background-color: #333; /* linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%);*/ /* #fbfbfb; */
+     color: #dbdcde;
+     font-family: SanFrancisco;
+     font-weight: normal;
+     text-decoration-skip: none;
+     text-align: justify;
+}
+ h1, h2, h3 {
+     font-weight: bold;
+}
+ h4, h5, h6 {
+     font-style: italic;
+}
+ h2, h3, h4, h5, h6, p, li, .cm-s-inner, .footnote-line {
+     font-size: 16px;
+}
+ h1 {
+  font-size: 36px;
+  text-align: center;
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 1.4125em;
+}
+ h2, h3  {
+     text-transform: uppercase;
+}
+ h2, h3, .cm-keyword {
+     text-decoration: underline;
+}
+ blockquote, strong {
+     color: #fff;
+     font-weight: bold;
+     font-style: italic; 
+}
+ blockquote {
+     margin-left: 30px;
+     margin-right: 30px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     border-top: 1px solid;
+     border-bottom: 1px solid;
+}
+a, .footnote-line {
+     color: #fff;
+}
+/* em, strong {
+     font-style: normal;
+}*/
+ em {
+  font-style: italic;
+}
+ strong {
+  font-weight: bold;
+}
+
+ ul {
+     list-style-type: circle 
+}
+ #write {
+     max-width: 60em
+}
+ #footer p {
+     border-top: 2px solid #333;
+     margin-top: 10px;
+}
+
+/* Codes */
+ .cm-s-inner {
+     border-left: 2px solid #333;
+     padding-left: 1em 
+}
+ .cm-s-inner * {
+     /*color: #333 !important*/ 
+     background-color: #f2f3f5;
+}
+
+ mark {
+  background: #fbeeac;
+}
+
+a, a > code {
+  color: rgb(249, 38, 114);
+  font-style: italic;
+  text-decoration: underline;
+}
+code {
+  background: #f2f3f5;
+  border-radius: 5px;
+  font-family: SanFranciscoMono;;
+}
+code, .md-fences {
+	padding: .5em;
+	background: #f2f3f5;
+  color: #4b4b4d;
+	border: 1px solid #d7d0d9;
+	border-radius: 3px;
+	padding: .1em;
+	font-size: 0.9rem !important;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+/* Numbering */
+ h1 {
+     counter-reset: h2 
+}
+ h2 {
+     counter-reset: h3 
+}
+ #write h2:before {
+     counter-increment: h2;
+     content: counter(h2) ". " 
+}
+ #write h3:before {
+     counter-increment: h3;
+     content: counter(h2) "." counter(h3) ". " 
+}
+ 
+ th,
+ td {
+  padding: 12px 15px;
+  text-align: left;
+}
+  
+thead, tbody, tfoot {
+    border-top: 1px solid;
+}
+ tr:last-child {
+   border-bottom: 1px solid;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: SanFrancisco, "PT Serif", 'Times New Roman', Times, serif;
+  color: #dbdcde;
+  background-color: #333;
+}
+
+#megamenu-back-btn {
+  background-color: #333;
+	color: #1f0909;
+	border-color: #1f0909;
+}
+/*
+.menu-item-container a.menu-style-btn {
+    display: inline-block;
+    margin: 2px 0;
+    background: var(--bg-color);
+    box-shadow: inset 0 0 0 1px rgb(16 22 26 / 7%), inset 0 -1px 0 rgb(16 22 26 / 0%);
+    cursor: pointer;
+    border: none;
+}*/
+
+.md-rawblock-input {
+  color: black;
+}
