@@ -14,8 +14,8 @@
   src: url('./skeleton/Raleway-Italic-VariableFont_wght.ttf');
 }
 @font-face{
-  font-family: 'Inconsolata';
-  src: url('./skeleton/Inconsolata-Regular.ttf');
+  font-family: 'SpaceMono';
+  src: url('./skeleton/SpaceMono-Regular.ttf');
 }
 
 :root {
@@ -37,7 +37,7 @@ pre {
 }
 
 html {
-	font-size: 14px;
+	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -47,7 +47,7 @@ html, body {
   text-align: justify;
   text-justify: inter-word;
 	color: #1f0909;
-	line-height: 1.5em;
+	line-height: 1.6em;
 }
 
 /*#write {
@@ -374,7 +374,7 @@ hr {
 }
 
 .md-image>.md-meta{
-	font-family: Inconsolata, Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+	font-family: SpaceMono, Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
 }
 
 
