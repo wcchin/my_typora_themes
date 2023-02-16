@@ -85,7 +85,7 @@ h2, h3, h4, h5, h6, .cm-s-inner, .footnote-line { /* p, li, */
 h1 {
   font-size: 24px;
   text-align: center;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #333;
 	margin-bottom: 1.875em;
 	padding-bottom: 1.4125em;
 }/*
@@ -93,7 +93,13 @@ h2, h3, h4 {
   font-size: 24px;
 }*/
  h2 {
-     text-transform: uppercase;
+     font-size: 20px;
+     text-transform: capitalize;
+     border-bottom: 1px solid #dbdcde;
+}
+ h3 {
+     text-decoration: underline;
+     text-decoration-color: #333;
 }
 /* h2, h3, .cm-keyword {
      text-decoration: underline;
@@ -138,6 +144,13 @@ ul {
   /*margin-top: 50px;
   border-top: 40px;*/
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
 @media print {
   @page {
     margin-top: 35mm;
@@ -186,7 +199,7 @@ code, .md-fences {
 	margin-right: 0.2em;
 }
 
-/* Numbering */
+/* Numbering 
  h1 {
      counter-reset: h2 
 }
@@ -200,7 +213,7 @@ code, .md-fences {
  #write h3:before {
      counter-increment: h3;
      content: counter(h2) "." counter(h3) ". " 
-}
+}*/
  
  th,
  td {

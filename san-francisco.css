@@ -79,17 +79,21 @@ body {
      font-size: 16px;
 }
  h1 {
-  font-size: 36px;
-  text-align: center;
-	border-bottom: 1px solid;
-	margin-bottom: 1.875em;
-	padding-bottom: 1.4125em;
+     font-size: 36px;
+     text-align: center;
+     border-bottom: 1px solid;
+     margin-bottom: 1.475em;
+     padding-bottom: 1.4125em;
 }
- h2, h3  {
-     text-transform: uppercase;
+ h2 {
+     font-size: 20px;
+     text-transform: capitalize;
+     border-bottom: 1px dashed;
 }
- h2, h3, .cm-keyword {
+ h3, .cm-keyword {
      text-decoration: underline;
+     text-decoration-style: solid;
+     text-decoration-thickness: 0.8px;
 }
  blockquote, strong {
      color: #fff;
@@ -123,6 +127,20 @@ a, .footnote-line {
  #write {
      max-width: 60em
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+@media print {
+  @page {
+    margin-top: 35mm;
+    margin-bottom: 35mm;
+  }
+}
+
  #footer p {
      border-top: 2px solid #333;
      margin-top: 10px;
@@ -139,7 +157,8 @@ a, .footnote-line {
 }
 
  mark {
-  background: #fbeeac;
+     color: #333;
+     background: #dbdcde;
 }
 
 a, a > code {
@@ -164,7 +183,7 @@ code, .md-fences {
 	margin-right: 0.2em;
 }
 
-/* Numbering */
+/* Numbering 
  h1 {
      counter-reset: h2 
 }
@@ -178,7 +197,7 @@ code, .md-fences {
  #write h3:before {
      counter-increment: h3;
      content: counter(h2) "." counter(h3) ". " 
-}
+}*/
  
  th,
  td {
